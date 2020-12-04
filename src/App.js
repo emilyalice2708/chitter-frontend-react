@@ -31,7 +31,7 @@ class App extends Component {
 
   render() {
     return (
-    <div className="App">
+    <div className="App">Chitter
       <BrowserRouter>
         <Switch>
           <Route exact path={"/"} render={(props) => (
