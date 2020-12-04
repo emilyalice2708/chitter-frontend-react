@@ -1,70 +1,94 @@
-# Getting Started with Create React App
+# Chitter API Frontend Challenge
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## About
 
-## Available Scripts
+A small Twitter clone that allows users to post messages to a public stream, using the API given here: [documentation](https://github.com/makersacademy/chitter_api_backend). 
 
-In the project directory, you can run:
+## Instructions
 
-### `yarn start`
+### Getting started
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1. Clone the repository:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+```
+$ git clone https://github.com/emilyalice2708/chitter-frontend-react
+```
 
-### `yarn test`
+2. Move into the main directory:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+$ cd chitter-front-end
+```
 
-### `yarn build`
+3. Run npm install:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+$ npm install
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+4. Start the server:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+$ npm start
+```
 
-### `yarn eject`
+## Planning
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### User Stories
+```
+As a user,
+So that I can see what people have been saying,
+I'd like to see all peeps.
+```
+```
+As a user,
+So that I can focus on something my friend said,
+I'd like to view an individual peep.
+```
+```
+As a user,
+So that I can have my own handle,
+I'd like to sign up.
+```
+```
+As a user,
+So that I can interact with my friends as me,
+I'd like to sign in.
+```
+```
+As a user,
+So that I can say what's been on my mind,
+I'd like to post my own peep.
+```
+```
+As a user,
+So that I can see the most popular peeps,
+I'd like to see the like count on each peep.
+```
+## Process
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+This is a re-do of the Makers week 4 frontend-api weekend challenge using react. 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Specification:
+- Creating Users
+- Logging in
+- Posting Peeps
+- Viewing all Peeps
+- Viewing individual Peeps
+- Deleting Peeps
+- Liking Peeps
+- Unliking Peeps
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Steps taken
 
-## Learn More
+1. Viewing all Peeps
+- Peep View component responsible for mapping over peeps data and displaying peeps with additional info such as likes and dates.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2. Implement sign-up functionality
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+3. Allow users to log in
 
-### Code Splitting
+4. Allow users to post peeps
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Resources
+- [Fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)
